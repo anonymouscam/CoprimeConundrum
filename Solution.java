@@ -17,7 +17,7 @@ public class Solution {
         long result = 0L;
         for (int i = 2; i <= n; i++) {
             //if we have x factors then we have (2^x-2)/2 valid pairs
-            result += ((1 << numFactors[i]) - 2) >> 1;
+            result += ((1L << numFactors[i]) - 2L) >> 1;
         }
         return result;
     }
